@@ -49,7 +49,7 @@ bool isAnagram(string s1, string s2){
  *You should provide a recursive solution*/
 bool isPalindrome(const string s1){
 	for (int i=0; i<(s1.length()/2);i++){
-		if (s1[i] != s1[s1.length()-i-1]){
+		if (tolower(s1[i]) != tolower(s1[s1.length()-i-1])){
 			return false; 
 		}
 	}
